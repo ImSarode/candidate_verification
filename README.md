@@ -1,6 +1,6 @@
 # Autonomous AI Agent for Candidate Information Collection
 
-A Python-based AI agent that helps complete internship candidate applications. It retrieves a candidate record from the provided ACME REST API, detects **missing and invalid required fields**, confirms the candidate's identity by name, collects corrections through natural conversation, validates answers, and safely updates the record.
+A Python-based AI agent that helps complete internship candidate applications. It retrieves a candidate record from the provided REST API, detects **missing and invalid required fields**, confirms the candidate's identity by name, collects corrections through natural conversation, validates answers, and safely updates the record.
 
 ## Features
 
@@ -28,7 +28,7 @@ A Python-based AI agent that helps complete internship candidate applications. I
 ## Project structure
 
 ```text
-prodigal_assignment/
+candidate_verification/
 ├── src/
 │   └── prodigal_assignment/
 │       ├── __init__.py
@@ -54,7 +54,7 @@ prodigal_assignment/
 
 - Python **3.11+**
 - [uv](https://docs.astral.sh/uv/) (recommended)
-- ACME candidate API URL and API key
+- Database candidate API URL and API key
 - Groq API key
 
 ## Running the agent
@@ -62,7 +62,7 @@ prodigal_assignment/
 Start a conversation with a candidate ID:
 
 ```powershell
-uv run python -m prodigal_assignment.main --candidate-id c004
+uv run python .\src\prodigal_assignment\main.py --candidate-id c001
 ```
 
 The program retrieves the candidate, checks required fields, and either finishes an already-complete record or asks for identity confirmation. Respond naturally at the `You:` prompt. Type **`/quit`** to end the session through the graph's finalization flow.
