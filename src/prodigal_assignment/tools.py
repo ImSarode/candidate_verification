@@ -6,8 +6,8 @@ from langchain_core.tools import tool
 from langgraph.prebuilt import ToolRuntime
 from pydantic import BaseModel, Field
 
-from .api_client import get_candidate, patch_candidate, VersionConflict
-from .validators import (
+from prodigal_assignment.api_client import get_candidate, patch_candidate, VersionConflict
+from prodigal_assignment.validators import (
     MANDATORY_FIELDS, OPTIONAL_FIELDS, analyze_candidate, validate_field, is_missing,
 )
 

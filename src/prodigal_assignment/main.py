@@ -2,10 +2,10 @@ import argparse
 import uuid
 from langgraph.types import Command
 
-from .agent import graph
-from .api_client import get_candidate
-from .logger import begin_run, log_event, save_run
-from .tools import safe_update
+from prodigal_assignment.agent import graph
+from prodigal_assignment.api_client import get_candidate
+from prodigal_assignment.logger import begin_run, log_event, save_run
+from prodigal_assignment.tools import safe_update
 
 
 def main():

@@ -1,0 +1,1026 @@
+{
+  "candidate_id": "c002",
+  "timestamp": "2026-11-14T10:25:52.016914+00:00",
+  "final_status": "completed",
+  "error": null,
+  "conversation": [
+    {
+      "role": "human",
+      "content": "Yes"
+    },
+    {
+      "role": "ai",
+      "content": "Sure! Could you let me know:\n\n1. Your graduation year  \n2. The date you\u2019ll be available to start (YYYY\u2011MM\u2011DD)  \n3. How many months you\u2019d like the internship to be  \n\nThanks!"
+    },
+    {
+      "role": "human",
+      "content": "1. 2025 2. 14th December 2026 3. 5"
+    },
+    {
+      "role": "ai",
+      "content": "",
+      "tool_calls": [
+        {
+          "name": "save_candidate_fields",
+          "args": {
+            "fields": {
+              "available_from": "2026-12-14",
+              "graduation_year": 2025,
+              "internship_duration_months": 5
+            }
+          },
+          "id": "fc_2ba033fa-6fd5-4640-839f-8a6477a035d1",
+          "type": "tool_call"
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": "{\"saved\": false, \"error\": \"{'graduation_year': 'Graduation year must be 2026\u20132028', 'internship_duration_months': 'Internship duration must be 2, 3, or 6 months'}\", \"action\": \"Clarify or request human review\"}",
+      "tool_name": "save_candidate_fields",
+      "tool_call_id": "fc_2ba033fa-6fd5-4640-839f-8a6477a035d1"
+    },
+    {
+      "role": "ai",
+      "content": "Got it\u2014thanks for sharing! A couple of details need a quick tweak:\n\n- **Graduation year**: Our system only accepts years\u202f2026\u202fthrough\u202f2028 for upcoming graduates.  \n- **Internship duration**: The allowed lengths are **2,\u202f3, or\u202f6\u202fmonths**.\n\nCould you let me know the correct graduation year (2026\u20112028) and pick one of the allowed internship lengths (2,\u202f3, or\u202f6\u202fmonths)? The start\u2011date you provided (2026\u201112\u201114) looks perfect. Thanks!"
+    },
+    {
+      "role": "human",
+      "content": "2026 and 6"
+    },
+    {
+      "role": "ai",
+      "content": "",
+      "tool_calls": [
+        {
+          "name": "save_candidate_fields",
+          "args": {
+            "fields": {
+              "graduation_year": 2026,
+              "internship_duration_months": 6
+            }
+          },
+          "id": "fc_75740a59-242f-4233-928f-4eaea9a957d7",
+          "type": "tool_call"
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": "{\"saved\": true, \"is_complete\": false, \"collection_status\": \"in_progress\", \"remaining_missing\": [\"available_from\"], \"remaining_invalid\": {}}",
+      "tool_name": "save_candidate_fields",
+      "tool_call_id": "fc_75740a59-242f-4233-928f-4eaea9a957d7"
+    },
+    {
+      "role": "ai",
+      "content": "",
+      "tool_calls": [
+        {
+          "name": "save_candidate_fields",
+          "args": {
+            "fields": {
+              "available_from": "2026-12-14"
+            }
+          },
+          "id": "fc_cac54dde-48a4-4acb-9b20-887dd131a48f",
+          "type": "tool_call"
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": "{\"saved\": true, \"is_complete\": true, \"collection_status\": \"completed\", \"remaining_missing\": [], \"remaining_invalid\": {}}",
+      "tool_name": "save_candidate_fields",
+      "tool_call_id": "fc_cac54dde-48a4-4acb-9b20-887dd131a48f"
+    },
+    {
+      "role": "ai",
+      "content": "Thank you! Your internship application is complete."
+    }
+  ],
+  "events": [
+    {
+      "time": "2026-11-14T10:24:45.850925+00:00",
+      "kind": "api_request",
+      "method": "GET",
+      "path": "/v1/candidates/c002",
+      "fields": null,
+      "version": null,
+      "idempotency_key": null
+    },
+    {
+      "time": "2026-11-14T10:24:46.820152+00:00",
+      "kind": "api_response",
+      "method": "GET",
+      "path": "/v1/candidates/c002",
+      "status_code": 200,
+      "response": {
+        "id": "c002",
+        "full_name": "[REDACTED]",
+        "email": "[REDACTED]",
+        "college": "VJTI, Mumbai",
+        "degree": "B.Tech",
+        "branch": "Information Technology",
+        "graduation_year": null,
+        "cgpa": 8.7,
+        "preferred_location": "Remote",
+        "available_from": null,
+        "internship_duration_months": null,
+        "linkedin_url": "[REDACTED]",
+        "github_url": "[REDACTED]",
+        "skills": [
+          "Java",
+          "Spring Boot"
+        ],
+        "phone": "[REDACTED]",
+        "collection_status": "pending",
+        "attempt_count": 0,
+        "last_contacted_at": null,
+        "notes": "[REDACTED]",
+        "version": 1,
+        "updated_at": "2026-11-14T08:34:15+00:00"
+      }
+    },
+    {
+      "time": "2026-11-14T10:24:46.823654+00:00",
+      "kind": "api_request",
+      "method": "GET",
+      "path": "/v1/candidates/c002",
+      "fields": null,
+      "version": null,
+      "idempotency_key": null
+    },
+    {
+      "time": "2026-11-14T10:24:47.742339+00:00",
+      "kind": "api_response",
+      "method": "GET",
+      "path": "/v1/candidates/c002",
+      "status_code": 200,
+      "response": {
+        "id": "c002",
+        "full_name": "[REDACTED]",
+        "email": "[REDACTED]",
+        "college": "VJTI, Mumbai",
+        "degree": "B.Tech",
+        "branch": "Information Technology",
+        "graduation_year": null,
+        "cgpa": 8.7,
+        "preferred_location": "Remote",
+        "available_from": null,
+        "internship_duration_months": null,
+        "linkedin_url": "[REDACTED]",
+        "github_url": "[REDACTED]",
+        "skills": [
+          "Java",
+          "Spring Boot"
+        ],
+        "phone": "[REDACTED]",
+        "collection_status": "pending",
+        "attempt_count": 0,
+        "last_contacted_at": null,
+        "notes": "[REDACTED]",
+        "version": 1,
+        "updated_at": "2026-11-14T08:34:15+00:00"
+      }
+    },
+    {
+      "time": "2026-11-14T10:24:47.743357+00:00",
+      "kind": "api_request",
+      "method": "PATCH",
+      "path": "/v1/candidates/c002",
+      "fields": {
+        "last_contacted_at": "2026-11-14T15:54:47+05:30",
+        "attempt_count": 1
+      },
+      "version": 1,
+      "idempotency_key": "e827de3b-bc66-4d1d-b6eb-be15e301d612"
+    },
+    {
+      "time": "2026-11-14T10:24:48.806757+00:00",
+      "kind": "api_response",
+      "method": "PATCH",
+      "path": "/v1/candidates/c002",
+      "status_code": 200,
+      "response": {
+        "id": "c002",
+        "full_name": "[REDACTED]",
+        "email": "[REDACTED]",
+        "college": "VJTI, Mumbai",
+        "degree": "B.Tech",
+        "branch": "Information Technology",
+        "graduation_year": null,
+        "cgpa": 8.7,
+        "preferred_location": "Remote",
+        "available_from": null,
+        "internship_duration_months": null,
+        "linkedin_url": "[REDACTED]",
+        "github_url": "[REDACTED]",
+        "skills": [
+          "Java",
+          "Spring Boot"
+        ],
+        "phone": "[REDACTED]",
+        "collection_status": "pending",
+        "attempt_count": 1,
+        "last_contacted_at": "2026-11-14T15:54:47+05:30",
+        "notes": "[REDACTED]",
+        "version": 2,
+        "updated_at": "2026-11-14T10:24:48+00:00"
+      }
+    },
+    {
+      "time": "2026-11-14T10:24:48.807756+00:00",
+      "kind": "api_request",
+      "method": "GET",
+      "path": "/v1/candidates/c002",
+      "fields": null,
+      "version": null,
+      "idempotency_key": null
+    },
+    {
+      "time": "2026-11-14T10:24:49.812879+00:00",
+      "kind": "api_response",
+      "method": "GET",
+      "path": "/v1/candidates/c002",
+      "status_code": 200,
+      "response": {
+        "id": "c002",
+        "full_name": "[REDACTED]",
+        "email": "[REDACTED]",
+        "college": "VJTI, Mumbai",
+        "degree": "B.Tech",
+        "branch": "Information Technology",
+        "graduation_year": null,
+        "cgpa": 8.7,
+        "preferred_location": "Remote",
+        "available_from": null,
+        "internship_duration_months": null,
+        "linkedin_url": "[REDACTED]",
+        "github_url": "[REDACTED]",
+        "skills": [
+          "Java",
+          "Spring Boot"
+        ],
+        "phone": "[REDACTED]",
+        "collection_status": "pending",
+        "attempt_count": 1,
+        "last_contacted_at": "2026-11-14T15:54:47+05:30",
+        "notes": "[REDACTED]",
+        "version": 2,
+        "updated_at": "2026-11-14T10:24:48+00:00"
+      }
+    },
+    {
+      "time": "2026-11-14T10:24:49.816372+00:00",
+      "kind": "terminal_prompt",
+      "prompt": "Hi! I am the ACME internship assistant. Am I speaking with Priya Nair?"
+    },
+    {
+      "time": "2026-11-14T10:24:51.789699+00:00",
+      "kind": "identity_reply",
+      "prompt": "Hi! I am the ACME internship assistant. Am I speaking with Priya Nair?",
+      "answer": "Yes"
+    },
+    {
+      "time": "2026-11-14T10:24:51.790703+00:00",
+      "kind": "api_request",
+      "method": "GET",
+      "path": "/v1/candidates/c002",
+      "fields": null,
+      "version": null,
+      "idempotency_key": null
+    },
+    {
+      "time": "2026-11-14T10:24:52.776447+00:00",
+      "kind": "api_response",
+      "method": "GET",
+      "path": "/v1/candidates/c002",
+      "status_code": 200,
+      "response": {
+        "id": "c002",
+        "full_name": "[REDACTED]",
+        "email": "[REDACTED]",
+        "college": "VJTI, Mumbai",
+        "degree": "B.Tech",
+        "branch": "Information Technology",
+        "graduation_year": null,
+        "cgpa": 8.7,
+        "preferred_location": "Remote",
+        "available_from": null,
+        "internship_duration_months": null,
+        "linkedin_url": "[REDACTED]",
+        "github_url": "[REDACTED]",
+        "skills": [
+          "Java",
+          "Spring Boot"
+        ],
+        "phone": "[REDACTED]",
+        "collection_status": "pending",
+        "attempt_count": 1,
+        "last_contacted_at": "2026-11-14T15:54:47+05:30",
+        "notes": "[REDACTED]",
+        "version": 2,
+        "updated_at": "2026-11-14T10:24:48+00:00"
+      }
+    },
+    {
+      "time": "2026-11-14T10:24:53.904157+00:00",
+      "kind": "terminal_prompt",
+      "prompt": "Sure! Could you let me know:\n\n1. Your graduation year  \n2. The date you\u2019ll be available to start (YYYY\u2011MM\u2011DD)  \n3. How many months you\u2019d like the internship to be  \n\nThanks!"
+    },
+    {
+      "time": "2026-11-14T10:25:18.097965+00:00",
+      "kind": "terminal_reply",
+      "answer": "1. 2025 2. 14th December 2026 3. 5"
+    },
+    {
+      "time": "2026-11-14T10:25:18.098961+00:00",
+      "kind": "api_request",
+      "method": "GET",
+      "path": "/v1/candidates/c002",
+      "fields": null,
+      "version": null,
+      "idempotency_key": null
+    },
+    {
+      "time": "2026-11-14T10:25:19.013636+00:00",
+      "kind": "api_response",
+      "method": "GET",
+      "path": "/v1/candidates/c002",
+      "status_code": 200,
+      "response": {
+        "id": "c002",
+        "full_name": "[REDACTED]",
+        "email": "[REDACTED]",
+        "college": "VJTI, Mumbai",
+        "degree": "B.Tech",
+        "branch": "Information Technology",
+        "graduation_year": null,
+        "cgpa": 8.7,
+        "preferred_location": "Remote",
+        "available_from": null,
+        "internship_duration_months": null,
+        "linkedin_url": "[REDACTED]",
+        "github_url": "[REDACTED]",
+        "skills": [
+          "Java",
+          "Spring Boot"
+        ],
+        "phone": "[REDACTED]",
+        "collection_status": "pending",
+        "attempt_count": 1,
+        "last_contacted_at": "2026-11-14T15:54:47+05:30",
+        "notes": "[REDACTED]",
+        "version": 2,
+        "updated_at": "2026-11-14T10:24:48+00:00"
+      }
+    },
+    {
+      "time": "2026-11-14T10:25:20.359067+00:00",
+      "kind": "api_request",
+      "method": "GET",
+      "path": "/v1/candidates/c002",
+      "fields": null,
+      "version": null,
+      "idempotency_key": null
+    },
+    {
+      "time": "2026-11-14T10:25:21.310624+00:00",
+      "kind": "api_response",
+      "method": "GET",
+      "path": "/v1/candidates/c002",
+      "status_code": 200,
+      "response": {
+        "id": "c002",
+        "full_name": "[REDACTED]",
+        "email": "[REDACTED]",
+        "college": "VJTI, Mumbai",
+        "degree": "B.Tech",
+        "branch": "Information Technology",
+        "graduation_year": null,
+        "cgpa": 8.7,
+        "preferred_location": "Remote",
+        "available_from": null,
+        "internship_duration_months": null,
+        "linkedin_url": "[REDACTED]",
+        "github_url": "[REDACTED]",
+        "skills": [
+          "Java",
+          "Spring Boot"
+        ],
+        "phone": "[REDACTED]",
+        "collection_status": "pending",
+        "attempt_count": 1,
+        "last_contacted_at": "2026-11-14T15:54:47+05:30",
+        "notes": "[REDACTED]",
+        "version": 2,
+        "updated_at": "2026-11-14T10:24:48+00:00"
+      }
+    },
+    {
+      "time": "2026-11-14T10:25:21.312645+00:00",
+      "kind": "api_request",
+      "method": "GET",
+      "path": "/v1/candidates/c002",
+      "fields": null,
+      "version": null,
+      "idempotency_key": null
+    },
+    {
+      "time": "2026-11-14T10:25:22.286068+00:00",
+      "kind": "api_response",
+      "method": "GET",
+      "path": "/v1/candidates/c002",
+      "status_code": 200,
+      "response": {
+        "id": "c002",
+        "full_name": "[REDACTED]",
+        "email": "[REDACTED]",
+        "college": "VJTI, Mumbai",
+        "degree": "B.Tech",
+        "branch": "Information Technology",
+        "graduation_year": null,
+        "cgpa": 8.7,
+        "preferred_location": "Remote",
+        "available_from": null,
+        "internship_duration_months": null,
+        "linkedin_url": "[REDACTED]",
+        "github_url": "[REDACTED]",
+        "skills": [
+          "Java",
+          "Spring Boot"
+        ],
+        "phone": "[REDACTED]",
+        "collection_status": "pending",
+        "attempt_count": 1,
+        "last_contacted_at": "2026-11-14T15:54:47+05:30",
+        "notes": "[REDACTED]",
+        "version": 2,
+        "updated_at": "2026-11-14T10:24:48+00:00"
+      }
+    },
+    {
+      "time": "2026-11-14T10:25:22.288249+00:00",
+      "kind": "api_request",
+      "method": "GET",
+      "path": "/v1/candidates/c002",
+      "fields": null,
+      "version": null,
+      "idempotency_key": null
+    },
+    {
+      "time": "2026-11-14T10:25:23.285748+00:00",
+      "kind": "api_response",
+      "method": "GET",
+      "path": "/v1/candidates/c002",
+      "status_code": 200,
+      "response": {
+        "id": "c002",
+        "full_name": "[REDACTED]",
+        "email": "[REDACTED]",
+        "college": "VJTI, Mumbai",
+        "degree": "B.Tech",
+        "branch": "Information Technology",
+        "graduation_year": null,
+        "cgpa": 8.7,
+        "preferred_location": "Remote",
+        "available_from": null,
+        "internship_duration_months": null,
+        "linkedin_url": "[REDACTED]",
+        "github_url": "[REDACTED]",
+        "skills": [
+          "Java",
+          "Spring Boot"
+        ],
+        "phone": "[REDACTED]",
+        "collection_status": "pending",
+        "attempt_count": 1,
+        "last_contacted_at": "2026-11-14T15:54:47+05:30",
+        "notes": "[REDACTED]",
+        "version": 2,
+        "updated_at": "2026-11-14T10:24:48+00:00"
+      }
+    },
+    {
+      "time": "2026-11-14T10:25:24.080161+00:00",
+      "kind": "terminal_prompt",
+      "prompt": "Got it\u2014thanks for sharing! A couple of details need a quick tweak:\n\n- **Graduation year**: Our system only accepts years\u202f2026\u202fthrough\u202f2028 for upcoming graduates.  \n- **Internship duration**: The allowed lengths are **2,\u202f3, or\u202f6\u202fmonths**.\n\nCould you let me know the correct graduation year (2026\u20112028) and pick one of the allowed internship lengths (2,\u202f3, or\u202f6\u202fmonths)? The start\u2011date you provided (2026\u201112\u201114) looks perfect. Thanks!"
+    },
+    {
+      "time": "2026-11-14T10:25:38.546526+00:00",
+      "kind": "terminal_reply",
+      "answer": "2026 and 6"
+    },
+    {
+      "time": "2026-11-14T10:25:38.548526+00:00",
+      "kind": "api_request",
+      "method": "GET",
+      "path": "/v1/candidates/c002",
+      "fields": null,
+      "version": null,
+      "idempotency_key": null
+    },
+    {
+      "time": "2026-11-14T10:25:39.543307+00:00",
+      "kind": "api_response",
+      "method": "GET",
+      "path": "/v1/candidates/c002",
+      "status_code": 200,
+      "response": {
+        "id": "c002",
+        "full_name": "[REDACTED]",
+        "email": "[REDACTED]",
+        "college": "VJTI, Mumbai",
+        "degree": "B.Tech",
+        "branch": "Information Technology",
+        "graduation_year": null,
+        "cgpa": 8.7,
+        "preferred_location": "Remote",
+        "available_from": null,
+        "internship_duration_months": null,
+        "linkedin_url": "[REDACTED]",
+        "github_url": "[REDACTED]",
+        "skills": [
+          "Java",
+          "Spring Boot"
+        ],
+        "phone": "[REDACTED]",
+        "collection_status": "pending",
+        "attempt_count": 1,
+        "last_contacted_at": "2026-11-14T15:54:47+05:30",
+        "notes": "[REDACTED]",
+        "version": 2,
+        "updated_at": "2026-11-14T10:24:48+00:00"
+      }
+    },
+    {
+      "time": "2026-11-14T10:25:40.326535+00:00",
+      "kind": "api_request",
+      "method": "GET",
+      "path": "/v1/candidates/c002",
+      "fields": null,
+      "version": null,
+      "idempotency_key": null
+    },
+    {
+      "time": "2026-11-14T10:25:41.276171+00:00",
+      "kind": "api_response",
+      "method": "GET",
+      "path": "/v1/candidates/c002",
+      "status_code": 200,
+      "response": {
+        "id": "c002",
+        "full_name": "[REDACTED]",
+        "email": "[REDACTED]",
+        "college": "VJTI, Mumbai",
+        "degree": "B.Tech",
+        "branch": "Information Technology",
+        "graduation_year": null,
+        "cgpa": 8.7,
+        "preferred_location": "Remote",
+        "available_from": null,
+        "internship_duration_months": null,
+        "linkedin_url": "[REDACTED]",
+        "github_url": "[REDACTED]",
+        "skills": [
+          "Java",
+          "Spring Boot"
+        ],
+        "phone": "[REDACTED]",
+        "collection_status": "pending",
+        "attempt_count": 1,
+        "last_contacted_at": "2026-11-14T15:54:47+05:30",
+        "notes": "[REDACTED]",
+        "version": 2,
+        "updated_at": "2026-11-14T10:24:48+00:00"
+      }
+    },
+    {
+      "time": "2026-11-14T10:25:41.277159+00:00",
+      "kind": "api_request",
+      "method": "PATCH",
+      "path": "/v1/candidates/c002",
+      "fields": {
+        "graduation_year": 2026,
+        "internship_duration_months": 6,
+        "collection_status": "in_progress"
+      },
+      "version": 2,
+      "idempotency_key": "a01073e2-f276-43e1-9dcf-452d3347efd8"
+    },
+    {
+      "time": "2026-11-14T10:25:42.295454+00:00",
+      "kind": "api_response",
+      "method": "PATCH",
+      "path": "/v1/candidates/c002",
+      "status_code": 200,
+      "response": {
+        "id": "c002",
+        "full_name": "[REDACTED]",
+        "email": "[REDACTED]",
+        "college": "VJTI, Mumbai",
+        "degree": "B.Tech",
+        "branch": "Information Technology",
+        "graduation_year": 2026,
+        "cgpa": 8.7,
+        "preferred_location": "Remote",
+        "available_from": null,
+        "internship_duration_months": 6,
+        "linkedin_url": "[REDACTED]",
+        "github_url": "[REDACTED]",
+        "skills": [
+          "Java",
+          "Spring Boot"
+        ],
+        "phone": "[REDACTED]",
+        "collection_status": "in_progress",
+        "attempt_count": 1,
+        "last_contacted_at": "2026-11-14T15:54:47+05:30",
+        "notes": "[REDACTED]",
+        "version": 3,
+        "updated_at": "2026-11-14T10:25:41+00:00"
+      }
+    },
+    {
+      "time": "2026-11-14T10:25:42.297508+00:00",
+      "kind": "api_request",
+      "method": "GET",
+      "path": "/v1/candidates/c002",
+      "fields": null,
+      "version": null,
+      "idempotency_key": null
+    },
+    {
+      "time": "2026-11-14T10:25:43.281142+00:00",
+      "kind": "api_response",
+      "method": "GET",
+      "path": "/v1/candidates/c002",
+      "status_code": 200,
+      "response": {
+        "id": "c002",
+        "full_name": "[REDACTED]",
+        "email": "[REDACTED]",
+        "college": "VJTI, Mumbai",
+        "degree": "B.Tech",
+        "branch": "Information Technology",
+        "graduation_year": 2026,
+        "cgpa": 8.7,
+        "preferred_location": "Remote",
+        "available_from": null,
+        "internship_duration_months": 6,
+        "linkedin_url": "[REDACTED]",
+        "github_url": "[REDACTED]",
+        "skills": [
+          "Java",
+          "Spring Boot"
+        ],
+        "phone": "[REDACTED]",
+        "collection_status": "in_progress",
+        "attempt_count": 1,
+        "last_contacted_at": "2026-11-14T15:54:47+05:30",
+        "notes": "[REDACTED]",
+        "version": 3,
+        "updated_at": "2026-11-14T10:25:41+00:00"
+      }
+    },
+    {
+      "time": "2026-11-14T10:25:43.283119+00:00",
+      "kind": "api_request",
+      "method": "GET",
+      "path": "/v1/candidates/c002",
+      "fields": null,
+      "version": null,
+      "idempotency_key": null
+    },
+    {
+      "time": "2026-11-14T10:25:44.215891+00:00",
+      "kind": "api_response",
+      "method": "GET",
+      "path": "/v1/candidates/c002",
+      "status_code": 200,
+      "response": {
+        "id": "c002",
+        "full_name": "[REDACTED]",
+        "email": "[REDACTED]",
+        "college": "VJTI, Mumbai",
+        "degree": "B.Tech",
+        "branch": "Information Technology",
+        "graduation_year": 2026,
+        "cgpa": 8.7,
+        "preferred_location": "Remote",
+        "available_from": null,
+        "internship_duration_months": 6,
+        "linkedin_url": "[REDACTED]",
+        "github_url": "[REDACTED]",
+        "skills": [
+          "Java",
+          "Spring Boot"
+        ],
+        "phone": "[REDACTED]",
+        "collection_status": "in_progress",
+        "attempt_count": 1,
+        "last_contacted_at": "2026-11-14T15:54:47+05:30",
+        "notes": "[REDACTED]",
+        "version": 3,
+        "updated_at": "2026-11-14T10:25:41+00:00"
+      }
+    },
+    {
+      "time": "2026-11-14T10:25:44.218233+00:00",
+      "kind": "api_request",
+      "method": "GET",
+      "path": "/v1/candidates/c002",
+      "fields": null,
+      "version": null,
+      "idempotency_key": null
+    },
+    {
+      "time": "2026-11-14T10:25:45.174626+00:00",
+      "kind": "api_response",
+      "method": "GET",
+      "path": "/v1/candidates/c002",
+      "status_code": 200,
+      "response": {
+        "id": "c002",
+        "full_name": "[REDACTED]",
+        "email": "[REDACTED]",
+        "college": "VJTI, Mumbai",
+        "degree": "B.Tech",
+        "branch": "Information Technology",
+        "graduation_year": 2026,
+        "cgpa": 8.7,
+        "preferred_location": "Remote",
+        "available_from": null,
+        "internship_duration_months": 6,
+        "linkedin_url": "[REDACTED]",
+        "github_url": "[REDACTED]",
+        "skills": [
+          "Java",
+          "Spring Boot"
+        ],
+        "phone": "[REDACTED]",
+        "collection_status": "in_progress",
+        "attempt_count": 1,
+        "last_contacted_at": "2026-11-14T15:54:47+05:30",
+        "notes": "[REDACTED]",
+        "version": 3,
+        "updated_at": "2026-11-14T10:25:41+00:00"
+      }
+    },
+    {
+      "time": "2026-11-14T10:25:46.039320+00:00",
+      "kind": "api_request",
+      "method": "GET",
+      "path": "/v1/candidates/c002",
+      "fields": null,
+      "version": null,
+      "idempotency_key": null
+    },
+    {
+      "time": "2026-11-14T10:25:47.012941+00:00",
+      "kind": "api_response",
+      "method": "GET",
+      "path": "/v1/candidates/c002",
+      "status_code": 200,
+      "response": {
+        "id": "c002",
+        "full_name": "[REDACTED]",
+        "email": "[REDACTED]",
+        "college": "VJTI, Mumbai",
+        "degree": "B.Tech",
+        "branch": "Information Technology",
+        "graduation_year": 2026,
+        "cgpa": 8.7,
+        "preferred_location": "Remote",
+        "available_from": null,
+        "internship_duration_months": 6,
+        "linkedin_url": "[REDACTED]",
+        "github_url": "[REDACTED]",
+        "skills": [
+          "Java",
+          "Spring Boot"
+        ],
+        "phone": "[REDACTED]",
+        "collection_status": "in_progress",
+        "attempt_count": 1,
+        "last_contacted_at": "2026-11-14T15:54:47+05:30",
+        "notes": "[REDACTED]",
+        "version": 3,
+        "updated_at": "2026-11-14T10:25:41+00:00"
+      }
+    },
+    {
+      "time": "2026-11-14T10:25:47.013941+00:00",
+      "kind": "api_request",
+      "method": "PATCH",
+      "path": "/v1/candidates/c002",
+      "fields": {
+        "available_from": "2026-12-14",
+        "collection_status": "completed"
+      },
+      "version": 3,
+      "idempotency_key": "24fa7f8e-bfb1-404b-9dac-3cbc958e02fb"
+    },
+    {
+      "time": "2026-11-14T10:25:48.079556+00:00",
+      "kind": "api_response",
+      "method": "PATCH",
+      "path": "/v1/candidates/c002",
+      "status_code": 200,
+      "response": {
+        "id": "c002",
+        "full_name": "[REDACTED]",
+        "email": "[REDACTED]",
+        "college": "VJTI, Mumbai",
+        "degree": "B.Tech",
+        "branch": "Information Technology",
+        "graduation_year": 2026,
+        "cgpa": 8.7,
+        "preferred_location": "Remote",
+        "available_from": "2026-12-14",
+        "internship_duration_months": 6,
+        "linkedin_url": "[REDACTED]",
+        "github_url": "[REDACTED]",
+        "skills": [
+          "Java",
+          "Spring Boot"
+        ],
+        "phone": "[REDACTED]",
+        "collection_status": "completed",
+        "attempt_count": 1,
+        "last_contacted_at": "2026-11-14T15:54:47+05:30",
+        "notes": "[REDACTED]",
+        "version": 4,
+        "updated_at": "2026-11-14T10:25:47+00:00"
+      }
+    },
+    {
+      "time": "2026-11-14T10:25:48.080534+00:00",
+      "kind": "api_request",
+      "method": "GET",
+      "path": "/v1/candidates/c002",
+      "fields": null,
+      "version": null,
+      "idempotency_key": null
+    },
+    {
+      "time": "2026-11-14T10:25:49.096105+00:00",
+      "kind": "api_response",
+      "method": "GET",
+      "path": "/v1/candidates/c002",
+      "status_code": 200,
+      "response": {
+        "id": "c002",
+        "full_name": "[REDACTED]",
+        "email": "[REDACTED]",
+        "college": "VJTI, Mumbai",
+        "degree": "B.Tech",
+        "branch": "Information Technology",
+        "graduation_year": 2026,
+        "cgpa": 8.7,
+        "preferred_location": "Remote",
+        "available_from": "2026-12-14",
+        "internship_duration_months": 6,
+        "linkedin_url": "[REDACTED]",
+        "github_url": "[REDACTED]",
+        "skills": [
+          "Java",
+          "Spring Boot"
+        ],
+        "phone": "[REDACTED]",
+        "collection_status": "completed",
+        "attempt_count": 1,
+        "last_contacted_at": "2026-11-14T15:54:47+05:30",
+        "notes": "[REDACTED]",
+        "version": 4,
+        "updated_at": "2026-11-14T10:25:47+00:00"
+      }
+    },
+    {
+      "time": "2026-11-14T10:25:49.099094+00:00",
+      "kind": "api_request",
+      "method": "GET",
+      "path": "/v1/candidates/c002",
+      "fields": null,
+      "version": null,
+      "idempotency_key": null
+    },
+    {
+      "time": "2026-11-14T10:25:50.034521+00:00",
+      "kind": "api_response",
+      "method": "GET",
+      "path": "/v1/candidates/c002",
+      "status_code": 200,
+      "response": {
+        "id": "c002",
+        "full_name": "[REDACTED]",
+        "email": "[REDACTED]",
+        "college": "VJTI, Mumbai",
+        "degree": "B.Tech",
+        "branch": "Information Technology",
+        "graduation_year": 2026,
+        "cgpa": 8.7,
+        "preferred_location": "Remote",
+        "available_from": "2026-12-14",
+        "internship_duration_months": 6,
+        "linkedin_url": "[REDACTED]",
+        "github_url": "[REDACTED]",
+        "skills": [
+          "Java",
+          "Spring Boot"
+        ],
+        "phone": "[REDACTED]",
+        "collection_status": "completed",
+        "attempt_count": 1,
+        "last_contacted_at": "2026-11-14T15:54:47+05:30",
+        "notes": "[REDACTED]",
+        "version": 4,
+        "updated_at": "2026-11-14T10:25:47+00:00"
+      }
+    },
+    {
+      "time": "2026-11-14T10:25:50.036709+00:00",
+      "kind": "api_request",
+      "method": "GET",
+      "path": "/v1/candidates/c002",
+      "fields": null,
+      "version": null,
+      "idempotency_key": null
+    },
+    {
+      "time": "2026-11-14T10:25:51.033527+00:00",
+      "kind": "api_response",
+      "method": "GET",
+      "path": "/v1/candidates/c002",
+      "status_code": 200,
+      "response": {
+        "id": "c002",
+        "full_name": "[REDACTED]",
+        "email": "[REDACTED]",
+        "college": "VJTI, Mumbai",
+        "degree": "B.Tech",
+        "branch": "Information Technology",
+        "graduation_year": 2026,
+        "cgpa": 8.7,
+        "preferred_location": "Remote",
+        "available_from": "2026-12-14",
+        "internship_duration_months": 6,
+        "linkedin_url": "[REDACTED]",
+        "github_url": "[REDACTED]",
+        "skills": [
+          "Java",
+          "Spring Boot"
+        ],
+        "phone": "[REDACTED]",
+        "collection_status": "completed",
+        "attempt_count": 1,
+        "last_contacted_at": "2026-11-14T15:54:47+05:30",
+        "notes": "[REDACTED]",
+        "version": 4,
+        "updated_at": "2026-11-14T10:25:47+00:00"
+      }
+    },
+    {
+      "time": "2026-11-14T10:25:51.037521+00:00",
+      "kind": "api_request",
+      "method": "GET",
+      "path": "/v1/candidates/c002",
+      "fields": null,
+      "version": null,
+      "idempotency_key": null
+    },
+    {
+      "time": "2026-11-14T10:25:52.014916+00:00",
+      "kind": "api_response",
+      "method": "GET",
+      "path": "/v1/candidates/c002",
+      "status_code": 200,
+      "response": {
+        "id": "c002",
+        "full_name": "[REDACTED]",
+        "email": "[REDACTED]",
+        "college": "VJTI, Mumbai",
+        "degree": "B.Tech",
+        "branch": "Information Technology",
+        "graduation_year": 2026,
+        "cgpa": 8.7,
+        "preferred_location": "Remote",
+        "available_from": "2026-12-14",
+        "internship_duration_months": 6,
+        "linkedin_url": "[REDACTED]",
+        "github_url": "[REDACTED]",
+        "skills": [
+          "Java",
+          "Spring Boot"
+        ],
+        "phone": "[REDACTED]",
+        "collection_status": "completed",
+        "attempt_count": 1,
+        "last_contacted_at": "2026-11-14T15:54:47+05:30",
+        "notes": "[REDACTED]",
+        "version": 4,
+        "updated_at": "2026-11-14T10:25:47+00:00"
+      }
+    }
+  ]
+}

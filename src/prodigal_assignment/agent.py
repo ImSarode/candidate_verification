@@ -10,10 +10,10 @@ from langgraph.graph.message import add_messages
 from langgraph.prebuilt import ToolNode
 from langgraph.types import interrupt
 
-from .api_client import get_candidate
-from .logger import log_event
-from .tools import TOOLS, current_time, safe_update
-from .validators import MANDATORY_FIELDS, analyze_candidate
+from prodigal_assignment.api_client import get_candidate
+from prodigal_assignment.logger import log_event
+from prodigal_assignment.tools import TOOLS, current_time, safe_update
+from prodigal_assignment.validators import MANDATORY_FIELDS, analyze_candidate
 
 llm = init_chat_model(model='groq:openai/gpt-oss-120b', temperature=0)
 llm_with_tools = llm.bind_tools(TOOLS)
