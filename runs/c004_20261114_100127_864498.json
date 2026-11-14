@@ -1,0 +1,963 @@
+{
+  "candidate_id": "c004",
+  "timestamp": "2026-11-14T10:01:27.864498+00:00",
+  "final_status": "completed",
+  "error": null,
+  "conversation": [
+    {
+      "role": "human",
+      "content": "Yes"
+    },
+    {
+      "role": "ai",
+      "content": "Great! To complete your application, could you let me know the following details?\n\n- **College name**\n- **Degree you\u2019re pursuing** (e.g., B.Tech, B.Sc, etc.)\n- **Branch/major** (e.g., Computer Science, Mechanical Engineering)\n\nThanks!"
+    },
+    {
+      "role": "human",
+      "content": "1. MPSTME, BSc, CS"
+    },
+    {
+      "role": "ai",
+      "content": "",
+      "tool_calls": [
+        {
+          "name": "save_candidate_fields",
+          "args": {
+            "fields": {
+              "branch": "CS",
+              "college": "MPSTME",
+              "degree": "BSc"
+            }
+          },
+          "id": "fc_53a253d4-2ea2-4c78-ae6e-a99f9653c503",
+          "type": "tool_call"
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": "{\"saved\": false, \"error\": \"{'degree': \\\"Degree must be one of ['B.E.', 'B.Sc', 'B.Tech', 'BCA', 'M.Tech', 'MBA Tech', 'MCA', 'Other']\\\"}\", \"action\": \"Clarify or request human review\"}",
+      "tool_name": "save_candidate_fields",
+      "tool_call_id": "fc_53a253d4-2ea2-4c78-ae6e-a99f9653c503"
+    },
+    {
+      "role": "ai",
+      "content": "Thanks for sharing! I just need a quick clarification on the degree format.\n\nOur system expects the degree to be listed exactly as one of the allowed options (e.g., **B.Sc**, B.E., B.Tech, BCA, M.Tech, MBA Tech, MCA, or Other). Could you confirm the correct spelling/punctuation for your degree? \n\nOnce I have that, I\u2019ll finalize your college, degree, and branch details."
+    },
+    {
+      "role": "human",
+      "content": "B.Sc"
+    },
+    {
+      "role": "ai",
+      "content": "",
+      "tool_calls": [
+        {
+          "name": "save_candidate_fields",
+          "args": {
+            "fields": {
+              "degree": "B.Sc"
+            }
+          },
+          "id": "fc_3d434d0b-ed03-49d9-b318-ee479ee60d9d",
+          "type": "tool_call"
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": "{\"saved\": true, \"is_complete\": false, \"collection_status\": \"in_progress\", \"remaining_missing\": [\"college\", \"branch\"], \"remaining_invalid\": {}}",
+      "tool_name": "save_candidate_fields",
+      "tool_call_id": "fc_3d434d0b-ed03-49d9-b318-ee479ee60d9d"
+    },
+    {
+      "role": "ai",
+      "content": "",
+      "tool_calls": [
+        {
+          "name": "save_candidate_fields",
+          "args": {
+            "fields": {
+              "branch": "CS",
+              "college": "MPSTME"
+            }
+          },
+          "id": "fc_1d1a92e5-8427-40cd-8eff-26cf5dd5c1b8",
+          "type": "tool_call"
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": "{\"saved\": true, \"is_complete\": true, \"collection_status\": \"completed\", \"remaining_missing\": [], \"remaining_invalid\": {}}",
+      "tool_name": "save_candidate_fields",
+      "tool_call_id": "fc_1d1a92e5-8427-40cd-8eff-26cf5dd5c1b8"
+    },
+    {
+      "role": "ai",
+      "content": "Thank you! Your internship application is complete."
+    }
+  ],
+  "events": [
+    {
+      "time": "2026-11-14T10:00:21.700428+00:00",
+      "kind": "api_request",
+      "method": "GET",
+      "path": "/v1/candidates/c004",
+      "fields": null,
+      "version": null,
+      "idempotency_key": null
+    },
+    {
+      "time": "2026-11-14T10:00:24.682208+00:00",
+      "kind": "api_response",
+      "method": "GET",
+      "path": "/v1/candidates/c004",
+      "status_code": 200,
+      "response": {
+        "id": "c004",
+        "full_name": "[REDACTED]",
+        "email": "[REDACTED]",
+        "college": null,
+        "degree": null,
+        "branch": null,
+        "graduation_year": 2027,
+        "cgpa": 9.1,
+        "preferred_location": "No preference",
+        "available_from": "2027-02-01",
+        "internship_duration_months": 3,
+        "linkedin_url": "[REDACTED]",
+        "github_url": "[REDACTED]",
+        "skills": null,
+        "phone": "[REDACTED]",
+        "collection_status": "pending",
+        "attempt_count": 0,
+        "last_contacted_at": null,
+        "notes": "[REDACTED]",
+        "version": 1,
+        "updated_at": "2026-11-14T08:34:15+00:00"
+      }
+    },
+    {
+      "time": "2026-11-14T10:00:24.686205+00:00",
+      "kind": "api_request",
+      "method": "GET",
+      "path": "/v1/candidates/c004",
+      "fields": null,
+      "version": null,
+      "idempotency_key": null
+    },
+    {
+      "time": "2026-11-14T10:00:25.634889+00:00",
+      "kind": "api_response",
+      "method": "GET",
+      "path": "/v1/candidates/c004",
+      "status_code": 200,
+      "response": {
+        "id": "c004",
+        "full_name": "[REDACTED]",
+        "email": "[REDACTED]",
+        "college": null,
+        "degree": null,
+        "branch": null,
+        "graduation_year": 2027,
+        "cgpa": 9.1,
+        "preferred_location": "No preference",
+        "available_from": "2027-02-01",
+        "internship_duration_months": 3,
+        "linkedin_url": "[REDACTED]",
+        "github_url": "[REDACTED]",
+        "skills": null,
+        "phone": "[REDACTED]",
+        "collection_status": "pending",
+        "attempt_count": 0,
+        "last_contacted_at": null,
+        "notes": "[REDACTED]",
+        "version": 1,
+        "updated_at": "2026-11-14T08:34:15+00:00"
+      }
+    },
+    {
+      "time": "2026-11-14T10:00:25.635888+00:00",
+      "kind": "api_request",
+      "method": "PATCH",
+      "path": "/v1/candidates/c004",
+      "fields": {
+        "last_contacted_at": "2026-11-14T15:30:25+05:30",
+        "attempt_count": 1
+      },
+      "version": 1,
+      "idempotency_key": "4b0deb50-2131-4a93-8f41-a4e223d9cd87"
+    },
+    {
+      "time": "2026-11-14T10:00:26.678206+00:00",
+      "kind": "api_response",
+      "method": "PATCH",
+      "path": "/v1/candidates/c004",
+      "status_code": 200,
+      "response": {
+        "id": "c004",
+        "full_name": "[REDACTED]",
+        "email": "[REDACTED]",
+        "college": null,
+        "degree": null,
+        "branch": null,
+        "graduation_year": 2027,
+        "cgpa": 9.1,
+        "preferred_location": "No preference",
+        "available_from": "2027-02-01",
+        "internship_duration_months": 3,
+        "linkedin_url": "[REDACTED]",
+        "github_url": "[REDACTED]",
+        "skills": null,
+        "phone": "[REDACTED]",
+        "collection_status": "pending",
+        "attempt_count": 1,
+        "last_contacted_at": "2026-11-14T15:30:25+05:30",
+        "notes": "[REDACTED]",
+        "version": 2,
+        "updated_at": "2026-11-14T10:00:25+00:00"
+      }
+    },
+    {
+      "time": "2026-11-14T10:00:26.679224+00:00",
+      "kind": "api_request",
+      "method": "GET",
+      "path": "/v1/candidates/c004",
+      "fields": null,
+      "version": null,
+      "idempotency_key": null
+    },
+    {
+      "time": "2026-11-14T10:00:27.689974+00:00",
+      "kind": "api_response",
+      "method": "GET",
+      "path": "/v1/candidates/c004",
+      "status_code": 200,
+      "response": {
+        "id": "c004",
+        "full_name": "[REDACTED]",
+        "email": "[REDACTED]",
+        "college": null,
+        "degree": null,
+        "branch": null,
+        "graduation_year": 2027,
+        "cgpa": 9.1,
+        "preferred_location": "No preference",
+        "available_from": "2027-02-01",
+        "internship_duration_months": 3,
+        "linkedin_url": "[REDACTED]",
+        "github_url": "[REDACTED]",
+        "skills": null,
+        "phone": "[REDACTED]",
+        "collection_status": "pending",
+        "attempt_count": 1,
+        "last_contacted_at": "2026-11-14T15:30:25+05:30",
+        "notes": "[REDACTED]",
+        "version": 2,
+        "updated_at": "2026-11-14T10:00:25+00:00"
+      }
+    },
+    {
+      "time": "2026-11-14T10:00:27.694011+00:00",
+      "kind": "terminal_prompt",
+      "prompt": "Hi! I am the ACME internship assistant. Am I speaking with Sneha Iyer?"
+    },
+    {
+      "time": "2026-11-14T10:00:32.283231+00:00",
+      "kind": "identity_reply",
+      "prompt": "Hi! I am the ACME internship assistant. Am I speaking with Sneha Iyer?",
+      "answer": "Yes"
+    },
+    {
+      "time": "2026-11-14T10:00:32.284231+00:00",
+      "kind": "api_request",
+      "method": "GET",
+      "path": "/v1/candidates/c004",
+      "fields": null,
+      "version": null,
+      "idempotency_key": null
+    },
+    {
+      "time": "2026-11-14T10:00:33.261671+00:00",
+      "kind": "api_response",
+      "method": "GET",
+      "path": "/v1/candidates/c004",
+      "status_code": 200,
+      "response": {
+        "id": "c004",
+        "full_name": "[REDACTED]",
+        "email": "[REDACTED]",
+        "college": null,
+        "degree": null,
+        "branch": null,
+        "graduation_year": 2027,
+        "cgpa": 9.1,
+        "preferred_location": "No preference",
+        "available_from": "2027-02-01",
+        "internship_duration_months": 3,
+        "linkedin_url": "[REDACTED]",
+        "github_url": "[REDACTED]",
+        "skills": null,
+        "phone": "[REDACTED]",
+        "collection_status": "pending",
+        "attempt_count": 1,
+        "last_contacted_at": "2026-11-14T15:30:25+05:30",
+        "notes": "[REDACTED]",
+        "version": 2,
+        "updated_at": "2026-11-14T10:00:25+00:00"
+      }
+    },
+    {
+      "time": "2026-11-14T10:00:34.493402+00:00",
+      "kind": "terminal_prompt",
+      "prompt": "Great! To complete your application, could you let me know the following details?\n\n- **College name**\n- **Degree you\u2019re pursuing** (e.g., B.Tech, B.Sc, etc.)\n- **Branch/major** (e.g., Computer Science, Mechanical Engineering)\n\nThanks!"
+    },
+    {
+      "time": "2026-11-14T10:00:48.561997+00:00",
+      "kind": "terminal_reply",
+      "answer": "1. MPSTME, BSc, CS"
+    },
+    {
+      "time": "2026-11-14T10:00:48.564012+00:00",
+      "kind": "api_request",
+      "method": "GET",
+      "path": "/v1/candidates/c004",
+      "fields": null,
+      "version": null,
+      "idempotency_key": null
+    },
+    {
+      "time": "2026-11-14T10:00:49.547204+00:00",
+      "kind": "api_response",
+      "method": "GET",
+      "path": "/v1/candidates/c004",
+      "status_code": 200,
+      "response": {
+        "id": "c004",
+        "full_name": "[REDACTED]",
+        "email": "[REDACTED]",
+        "college": null,
+        "degree": null,
+        "branch": null,
+        "graduation_year": 2027,
+        "cgpa": 9.1,
+        "preferred_location": "No preference",
+        "available_from": "2027-02-01",
+        "internship_duration_months": 3,
+        "linkedin_url": "[REDACTED]",
+        "github_url": "[REDACTED]",
+        "skills": null,
+        "phone": "[REDACTED]",
+        "collection_status": "pending",
+        "attempt_count": 1,
+        "last_contacted_at": "2026-11-14T15:30:25+05:30",
+        "notes": "[REDACTED]",
+        "version": 2,
+        "updated_at": "2026-11-14T10:00:25+00:00"
+      }
+    },
+    {
+      "time": "2026-11-14T10:00:50.564294+00:00",
+      "kind": "api_request",
+      "method": "GET",
+      "path": "/v1/candidates/c004",
+      "fields": null,
+      "version": null,
+      "idempotency_key": null
+    },
+    {
+      "time": "2026-11-14T10:00:51.512188+00:00",
+      "kind": "api_response",
+      "method": "GET",
+      "path": "/v1/candidates/c004",
+      "status_code": 200,
+      "response": {
+        "id": "c004",
+        "full_name": "[REDACTED]",
+        "email": "[REDACTED]",
+        "college": null,
+        "degree": null,
+        "branch": null,
+        "graduation_year": 2027,
+        "cgpa": 9.1,
+        "preferred_location": "No preference",
+        "available_from": "2027-02-01",
+        "internship_duration_months": 3,
+        "linkedin_url": "[REDACTED]",
+        "github_url": "[REDACTED]",
+        "skills": null,
+        "phone": "[REDACTED]",
+        "collection_status": "pending",
+        "attempt_count": 1,
+        "last_contacted_at": "2026-11-14T15:30:25+05:30",
+        "notes": "[REDACTED]",
+        "version": 2,
+        "updated_at": "2026-11-14T10:00:25+00:00"
+      }
+    },
+    {
+      "time": "2026-11-14T10:00:51.513192+00:00",
+      "kind": "api_request",
+      "method": "GET",
+      "path": "/v1/candidates/c004",
+      "fields": null,
+      "version": null,
+      "idempotency_key": null
+    },
+    {
+      "time": "2026-11-14T10:00:52.486666+00:00",
+      "kind": "api_response",
+      "method": "GET",
+      "path": "/v1/candidates/c004",
+      "status_code": 200,
+      "response": {
+        "id": "c004",
+        "full_name": "[REDACTED]",
+        "email": "[REDACTED]",
+        "college": null,
+        "degree": null,
+        "branch": null,
+        "graduation_year": 2027,
+        "cgpa": 9.1,
+        "preferred_location": "No preference",
+        "available_from": "2027-02-01",
+        "internship_duration_months": 3,
+        "linkedin_url": "[REDACTED]",
+        "github_url": "[REDACTED]",
+        "skills": null,
+        "phone": "[REDACTED]",
+        "collection_status": "pending",
+        "attempt_count": 1,
+        "last_contacted_at": "2026-11-14T15:30:25+05:30",
+        "notes": "[REDACTED]",
+        "version": 2,
+        "updated_at": "2026-11-14T10:00:25+00:00"
+      }
+    },
+    {
+      "time": "2026-11-14T10:00:52.488666+00:00",
+      "kind": "api_request",
+      "method": "GET",
+      "path": "/v1/candidates/c004",
+      "fields": null,
+      "version": null,
+      "idempotency_key": null
+    },
+    {
+      "time": "2026-11-14T10:00:53.451138+00:00",
+      "kind": "api_response",
+      "method": "GET",
+      "path": "/v1/candidates/c004",
+      "status_code": 200,
+      "response": {
+        "id": "c004",
+        "full_name": "[REDACTED]",
+        "email": "[REDACTED]",
+        "college": null,
+        "degree": null,
+        "branch": null,
+        "graduation_year": 2027,
+        "cgpa": 9.1,
+        "preferred_location": "No preference",
+        "available_from": "2027-02-01",
+        "internship_duration_months": 3,
+        "linkedin_url": "[REDACTED]",
+        "github_url": "[REDACTED]",
+        "skills": null,
+        "phone": "[REDACTED]",
+        "collection_status": "pending",
+        "attempt_count": 1,
+        "last_contacted_at": "2026-11-14T15:30:25+05:30",
+        "notes": "[REDACTED]",
+        "version": 2,
+        "updated_at": "2026-11-14T10:00:25+00:00"
+      }
+    },
+    {
+      "time": "2026-11-14T10:00:54.257113+00:00",
+      "kind": "terminal_prompt",
+      "prompt": "Thanks for sharing! I just need a quick clarification on the degree format.\n\nOur system expects the degree to be listed exactly as one of the allowed options (e.g., **B.Sc**, B.E., B.Tech, BCA, M.Tech, MBA Tech, MCA, or Other). Could you confirm the correct spelling/punctuation for your degree? \n\nOnce I have that, I\u2019ll finalize your college, degree, and branch details."
+    },
+    {
+      "time": "2026-11-14T10:01:13.590201+00:00",
+      "kind": "terminal_reply",
+      "answer": "B.Sc"
+    },
+    {
+      "time": "2026-11-14T10:01:13.591717+00:00",
+      "kind": "api_request",
+      "method": "GET",
+      "path": "/v1/candidates/c004",
+      "fields": null,
+      "version": null,
+      "idempotency_key": null
+    },
+    {
+      "time": "2026-11-14T10:01:15.375201+00:00",
+      "kind": "api_response",
+      "method": "GET",
+      "path": "/v1/candidates/c004",
+      "status_code": 200,
+      "response": {
+        "id": "c004",
+        "full_name": "[REDACTED]",
+        "email": "[REDACTED]",
+        "college": null,
+        "degree": null,
+        "branch": null,
+        "graduation_year": 2027,
+        "cgpa": 9.1,
+        "preferred_location": "No preference",
+        "available_from": "2027-02-01",
+        "internship_duration_months": 3,
+        "linkedin_url": "[REDACTED]",
+        "github_url": "[REDACTED]",
+        "skills": null,
+        "phone": "[REDACTED]",
+        "collection_status": "pending",
+        "attempt_count": 1,
+        "last_contacted_at": "2026-11-14T15:30:25+05:30",
+        "notes": "[REDACTED]",
+        "version": 2,
+        "updated_at": "2026-11-14T10:00:25+00:00"
+      }
+    },
+    {
+      "time": "2026-11-14T10:01:16.282959+00:00",
+      "kind": "api_request",
+      "method": "GET",
+      "path": "/v1/candidates/c004",
+      "fields": null,
+      "version": null,
+      "idempotency_key": null
+    },
+    {
+      "time": "2026-11-14T10:01:17.203511+00:00",
+      "kind": "api_response",
+      "method": "GET",
+      "path": "/v1/candidates/c004",
+      "status_code": 200,
+      "response": {
+        "id": "c004",
+        "full_name": "[REDACTED]",
+        "email": "[REDACTED]",
+        "college": null,
+        "degree": null,
+        "branch": null,
+        "graduation_year": 2027,
+        "cgpa": 9.1,
+        "preferred_location": "No preference",
+        "available_from": "2027-02-01",
+        "internship_duration_months": 3,
+        "linkedin_url": "[REDACTED]",
+        "github_url": "[REDACTED]",
+        "skills": null,
+        "phone": "[REDACTED]",
+        "collection_status": "pending",
+        "attempt_count": 1,
+        "last_contacted_at": "2026-11-14T15:30:25+05:30",
+        "notes": "[REDACTED]",
+        "version": 2,
+        "updated_at": "2026-11-14T10:00:25+00:00"
+      }
+    },
+    {
+      "time": "2026-11-14T10:01:17.205520+00:00",
+      "kind": "api_request",
+      "method": "PATCH",
+      "path": "/v1/candidates/c004",
+      "fields": {
+        "degree": "B.Sc",
+        "collection_status": "in_progress"
+      },
+      "version": 2,
+      "idempotency_key": "739a3f0a-bd0e-4596-b523-9b109c74e569"
+    },
+    {
+      "time": "2026-11-14T10:01:18.251055+00:00",
+      "kind": "api_response",
+      "method": "PATCH",
+      "path": "/v1/candidates/c004",
+      "status_code": 200,
+      "response": {
+        "id": "c004",
+        "full_name": "[REDACTED]",
+        "email": "[REDACTED]",
+        "college": null,
+        "degree": "B.Sc",
+        "branch": null,
+        "graduation_year": 2027,
+        "cgpa": 9.1,
+        "preferred_location": "No preference",
+        "available_from": "2027-02-01",
+        "internship_duration_months": 3,
+        "linkedin_url": "[REDACTED]",
+        "github_url": "[REDACTED]",
+        "skills": null,
+        "phone": "[REDACTED]",
+        "collection_status": "in_progress",
+        "attempt_count": 1,
+        "last_contacted_at": "2026-11-14T15:30:25+05:30",
+        "notes": "[REDACTED]",
+        "version": 3,
+        "updated_at": "2026-11-14T10:01:17+00:00"
+      }
+    },
+    {
+      "time": "2026-11-14T10:01:18.253096+00:00",
+      "kind": "api_request",
+      "method": "GET",
+      "path": "/v1/candidates/c004",
+      "fields": null,
+      "version": null,
+      "idempotency_key": null
+    },
+    {
+      "time": "2026-11-14T10:01:19.229406+00:00",
+      "kind": "api_response",
+      "method": "GET",
+      "path": "/v1/candidates/c004",
+      "status_code": 200,
+      "response": {
+        "id": "c004",
+        "full_name": "[REDACTED]",
+        "email": "[REDACTED]",
+        "college": null,
+        "degree": "B.Sc",
+        "branch": null,
+        "graduation_year": 2027,
+        "cgpa": 9.1,
+        "preferred_location": "No preference",
+        "available_from": "2027-02-01",
+        "internship_duration_months": 3,
+        "linkedin_url": "[REDACTED]",
+        "github_url": "[REDACTED]",
+        "skills": null,
+        "phone": "[REDACTED]",
+        "collection_status": "in_progress",
+        "attempt_count": 1,
+        "last_contacted_at": "2026-11-14T15:30:25+05:30",
+        "notes": "[REDACTED]",
+        "version": 3,
+        "updated_at": "2026-11-14T10:01:17+00:00"
+      }
+    },
+    {
+      "time": "2026-11-14T10:01:19.231399+00:00",
+      "kind": "api_request",
+      "method": "GET",
+      "path": "/v1/candidates/c004",
+      "fields": null,
+      "version": null,
+      "idempotency_key": null
+    },
+    {
+      "time": "2026-11-14T10:01:20.151110+00:00",
+      "kind": "api_response",
+      "method": "GET",
+      "path": "/v1/candidates/c004",
+      "status_code": 200,
+      "response": {
+        "id": "c004",
+        "full_name": "[REDACTED]",
+        "email": "[REDACTED]",
+        "college": null,
+        "degree": "B.Sc",
+        "branch": null,
+        "graduation_year": 2027,
+        "cgpa": 9.1,
+        "preferred_location": "No preference",
+        "available_from": "2027-02-01",
+        "internship_duration_months": 3,
+        "linkedin_url": "[REDACTED]",
+        "github_url": "[REDACTED]",
+        "skills": null,
+        "phone": "[REDACTED]",
+        "collection_status": "in_progress",
+        "attempt_count": 1,
+        "last_contacted_at": "2026-11-14T15:30:25+05:30",
+        "notes": "[REDACTED]",
+        "version": 3,
+        "updated_at": "2026-11-14T10:01:17+00:00"
+      }
+    },
+    {
+      "time": "2026-11-14T10:01:20.153151+00:00",
+      "kind": "api_request",
+      "method": "GET",
+      "path": "/v1/candidates/c004",
+      "fields": null,
+      "version": null,
+      "idempotency_key": null
+    },
+    {
+      "time": "2026-11-14T10:01:21.145804+00:00",
+      "kind": "api_response",
+      "method": "GET",
+      "path": "/v1/candidates/c004",
+      "status_code": 200,
+      "response": {
+        "id": "c004",
+        "full_name": "[REDACTED]",
+        "email": "[REDACTED]",
+        "college": null,
+        "degree": "B.Sc",
+        "branch": null,
+        "graduation_year": 2027,
+        "cgpa": 9.1,
+        "preferred_location": "No preference",
+        "available_from": "2027-02-01",
+        "internship_duration_months": 3,
+        "linkedin_url": "[REDACTED]",
+        "github_url": "[REDACTED]",
+        "skills": null,
+        "phone": "[REDACTED]",
+        "collection_status": "in_progress",
+        "attempt_count": 1,
+        "last_contacted_at": "2026-11-14T15:30:25+05:30",
+        "notes": "[REDACTED]",
+        "version": 3,
+        "updated_at": "2026-11-14T10:01:17+00:00"
+      }
+    },
+    {
+      "time": "2026-11-14T10:01:22.065391+00:00",
+      "kind": "api_request",
+      "method": "GET",
+      "path": "/v1/candidates/c004",
+      "fields": null,
+      "version": null,
+      "idempotency_key": null
+    },
+    {
+      "time": "2026-11-14T10:01:23.034208+00:00",
+      "kind": "api_response",
+      "method": "GET",
+      "path": "/v1/candidates/c004",
+      "status_code": 200,
+      "response": {
+        "id": "c004",
+        "full_name": "[REDACTED]",
+        "email": "[REDACTED]",
+        "college": null,
+        "degree": "B.Sc",
+        "branch": null,
+        "graduation_year": 2027,
+        "cgpa": 9.1,
+        "preferred_location": "No preference",
+        "available_from": "2027-02-01",
+        "internship_duration_months": 3,
+        "linkedin_url": "[REDACTED]",
+        "github_url": "[REDACTED]",
+        "skills": null,
+        "phone": "[REDACTED]",
+        "collection_status": "in_progress",
+        "attempt_count": 1,
+        "last_contacted_at": "2026-11-14T15:30:25+05:30",
+        "notes": "[REDACTED]",
+        "version": 3,
+        "updated_at": "2026-11-14T10:01:17+00:00"
+      }
+    },
+    {
+      "time": "2026-11-14T10:01:23.035202+00:00",
+      "kind": "api_request",
+      "method": "PATCH",
+      "path": "/v1/candidates/c004",
+      "fields": {
+        "branch": "CS",
+        "college": "MPSTME",
+        "collection_status": "completed"
+      },
+      "version": 3,
+      "idempotency_key": "137bf4fe-ddff-4633-9435-da237ab6bc6d"
+    },
+    {
+      "time": "2026-11-14T10:01:24.091520+00:00",
+      "kind": "api_response",
+      "method": "PATCH",
+      "path": "/v1/candidates/c004",
+      "status_code": 200,
+      "response": {
+        "id": "c004",
+        "full_name": "[REDACTED]",
+        "email": "[REDACTED]",
+        "college": "MPSTME",
+        "degree": "B.Sc",
+        "branch": "CS",
+        "graduation_year": 2027,
+        "cgpa": 9.1,
+        "preferred_location": "No preference",
+        "available_from": "2027-02-01",
+        "internship_duration_months": 3,
+        "linkedin_url": "[REDACTED]",
+        "github_url": "[REDACTED]",
+        "skills": null,
+        "phone": "[REDACTED]",
+        "collection_status": "completed",
+        "attempt_count": 1,
+        "last_contacted_at": "2026-11-14T15:30:25+05:30",
+        "notes": "[REDACTED]",
+        "version": 4,
+        "updated_at": "2026-11-14T10:01:23+00:00"
+      }
+    },
+    {
+      "time": "2026-11-14T10:01:24.092531+00:00",
+      "kind": "api_request",
+      "method": "GET",
+      "path": "/v1/candidates/c004",
+      "fields": null,
+      "version": null,
+      "idempotency_key": null
+    },
+    {
+      "time": "2026-11-14T10:01:25.056197+00:00",
+      "kind": "api_response",
+      "method": "GET",
+      "path": "/v1/candidates/c004",
+      "status_code": 200,
+      "response": {
+        "id": "c004",
+        "full_name": "[REDACTED]",
+        "email": "[REDACTED]",
+        "college": "MPSTME",
+        "degree": "B.Sc",
+        "branch": "CS",
+        "graduation_year": 2027,
+        "cgpa": 9.1,
+        "preferred_location": "No preference",
+        "available_from": "2027-02-01",
+        "internship_duration_months": 3,
+        "linkedin_url": "[REDACTED]",
+        "github_url": "[REDACTED]",
+        "skills": null,
+        "phone": "[REDACTED]",
+        "collection_status": "completed",
+        "attempt_count": 1,
+        "last_contacted_at": "2026-11-14T15:30:25+05:30",
+        "notes": "[REDACTED]",
+        "version": 4,
+        "updated_at": "2026-11-14T10:01:23+00:00"
+      }
+    },
+    {
+      "time": "2026-11-14T10:01:25.058710+00:00",
+      "kind": "api_request",
+      "method": "GET",
+      "path": "/v1/candidates/c004",
+      "fields": null,
+      "version": null,
+      "idempotency_key": null
+    },
+    {
+      "time": "2026-11-14T10:01:25.978234+00:00",
+      "kind": "api_response",
+      "method": "GET",
+      "path": "/v1/candidates/c004",
+      "status_code": 200,
+      "response": {
+        "id": "c004",
+        "full_name": "[REDACTED]",
+        "email": "[REDACTED]",
+        "college": "MPSTME",
+        "degree": "B.Sc",
+        "branch": "CS",
+        "graduation_year": 2027,
+        "cgpa": 9.1,
+        "preferred_location": "No preference",
+        "available_from": "2027-02-01",
+        "internship_duration_months": 3,
+        "linkedin_url": "[REDACTED]",
+        "github_url": "[REDACTED]",
+        "skills": null,
+        "phone": "[REDACTED]",
+        "collection_status": "completed",
+        "attempt_count": 1,
+        "last_contacted_at": "2026-11-14T15:30:25+05:30",
+        "notes": "[REDACTED]",
+        "version": 4,
+        "updated_at": "2026-11-14T10:01:23+00:00"
+      }
+    },
+    {
+      "time": "2026-11-14T10:01:25.981234+00:00",
+      "kind": "api_request",
+      "method": "GET",
+      "path": "/v1/candidates/c004",
+      "fields": null,
+      "version": null,
+      "idempotency_key": null
+    },
+    {
+      "time": "2026-11-14T10:01:26.919701+00:00",
+      "kind": "api_response",
+      "method": "GET",
+      "path": "/v1/candidates/c004",
+      "status_code": 200,
+      "response": {
+        "id": "c004",
+        "full_name": "[REDACTED]",
+        "email": "[REDACTED]",
+        "college": "MPSTME",
+        "degree": "B.Sc",
+        "branch": "CS",
+        "graduation_year": 2027,
+        "cgpa": 9.1,
+        "preferred_location": "No preference",
+        "available_from": "2027-02-01",
+        "internship_duration_months": 3,
+        "linkedin_url": "[REDACTED]",
+        "github_url": "[REDACTED]",
+        "skills": null,
+        "phone": "[REDACTED]",
+        "collection_status": "completed",
+        "attempt_count": 1,
+        "last_contacted_at": "2026-11-14T15:30:25+05:30",
+        "notes": "[REDACTED]",
+        "version": 4,
+        "updated_at": "2026-11-14T10:01:23+00:00"
+      }
+    },
+    {
+      "time": "2026-11-14T10:01:26.922690+00:00",
+      "kind": "api_request",
+      "method": "GET",
+      "path": "/v1/candidates/c004",
+      "fields": null,
+      "version": null,
+      "idempotency_key": null
+    },
+    {
+      "time": "2026-11-14T10:01:27.860497+00:00",
+      "kind": "api_response",
+      "method": "GET",
+      "path": "/v1/candidates/c004",
+      "status_code": 200,
+      "response": {
+        "id": "c004",
+        "full_name": "[REDACTED]",
+        "email": "[REDACTED]",
+        "college": "MPSTME",
+        "degree": "B.Sc",
+        "branch": "CS",
+        "graduation_year": 2027,
+        "cgpa": 9.1,
+        "preferred_location": "No preference",
+        "available_from": "2027-02-01",
+        "internship_duration_months": 3,
+        "linkedin_url": "[REDACTED]",
+        "github_url": "[REDACTED]",
+        "skills": null,
+        "phone": "[REDACTED]",
+        "collection_status": "completed",
+        "attempt_count": 1,
+        "last_contacted_at": "2026-11-14T15:30:25+05:30",
+        "notes": "[REDACTED]",
+        "version": 4,
+        "updated_at": "2026-11-14T10:01:23+00:00"
+      }
+    }
+  ]
+}
